@@ -1,0 +1,36 @@
+/* Make the whole page cleaner */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;        /* centers the content horizontally */
+  line-height: 1.6;
+  padding: 0 16px;
+}
+
+/* Simple top navigation bar */
+nav {
+  background-color: #1f2933;
+  padding: 10px 0;
+  margin-bottom: 24px;
+}
+
+nav a {
+  color: #f9fafb;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Headings and links */
+h1 {
+  color: #111827;
+}
+
+a {
+  color: #2563eb;
+}
+

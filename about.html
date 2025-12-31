@@ -1,0 +1,30 @@
+<body>
+  <h1>About this project</h1>
+
+  <h2>Static site on Amazon S3</h2>
+  <p>
+    This project is a simple static website built with plain HTML files.
+    The files are stored in an Amazon S3 bucket that has static website hosting enabled,
+    so S3 can serve <code>index.html</code> and other pages directly.
+  </p>
+
+  <h2>Public access with bucket policy</h2>
+  <p>
+    By default, S3 buckets are private. To make this site publicly readable, I disabled
+    the “Block all public access” setting for this bucket and added a bucket policy that
+    allows the s3:GetObject action for everyone on all objects in the bucket.
+    This makes the HTML files accessible over the internet, but still read-only.
+  </p>
+
+  <h2>CloudFront in front of S3</h2>
+  <p>
+    A CloudFront distribution sits in front of the S3 website endpoint.
+    CloudFront caches my pages at edge locations around the world and serves them over HTTPS.
+    This improves performance and security compared to using the raw S3 website URL.
+  </p>
+
+  <p><a href="index.html">Back home</a></p>
+</body>
+ <nav>
+<link rel="stylesheet" href="style.css">
+</nav>
